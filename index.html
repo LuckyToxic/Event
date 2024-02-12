@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            position: relative;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-around;
+
+            & #box1{
+                width: 200px;
+                height: 200px;
+                background-color: green;
+            }
+
+            & #box2{
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+                }
+
+            & #box3{
+                width: 200px;
+                height: 200px;
+                background-color: orange;
+            }
+        }
+    
+    main{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+
+        & #box4{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+        }
+    } */
+    </style>
+</head>
+<body onmousedown="moveBox(event)" oncontextmenu="return false;">
+    <header>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </header>
+    <main>
+        <div id="box4"></div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
